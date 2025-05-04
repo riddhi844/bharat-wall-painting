@@ -1,0 +1,131 @@
+body {
+    font-family: 'Segoe UI', sans-serif;
+    margin: 0;
+    background: #fffaf0;
+    color: #333;
+}
+
+nav {
+    background: #ff7f50;
+    color: white;
+    padding: 12px 24px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.hero {
+    background: linear-gradient(to right, #ffecd2, #fcb69f);
+    padding: 50px 20px;
+    text-align: center;
+    animation: fadeIn 1.5s ease-in;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+section {
+    padding: 30px 20px;
+    max-width: 900px;
+    margin: auto;
+}
+
+.category-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-top: 10px;
+}
+
+.category {
+    background: #ffe4b5;
+    padding: 15px;
+    border-radius: 10px;
+    flex: 1 1 200px;
+    text-align: center;
+    font-size: 1.1em;
+    font-weight: bold;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-width: 400px;
+}
+
+input,
+textarea,
+button {
+    padding: 10px;
+    font-size: 1em;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+}
+
+button {
+    background: #20b2aa;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+button:hover {
+    background: #008b8b;
+}
+
+.images {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.images img {
+    width: 200px;
+    border-radius: 10px;
+    border: 3px solid #c774ee;
+    transition: transform 0.3s ease;
+}
+
+.images img:hover {
+    transform: scale(1.05);
+}
+
+footer {
+    background: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+footer a {
+    color: #87cefa;
+    text-decoration: none;
+}
